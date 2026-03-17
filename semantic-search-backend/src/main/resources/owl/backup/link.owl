@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticsearch.com/link#"
+     xml:base="http://www.semanticsearch.com/link"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+<owl:Ontology rdf:about="http://www.semanticsearch.com/link">
+    
+    <!-- Import all source ontologies -->
+    <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
+    <owl:imports rdf:resource="http://www.semanticsearch.com/amazon"/>
+    <owl:imports rdf:resource="http://www.semanticsearch.com/flipkart"/>
+    <owl:imports rdf:resource="http://www.semanticsearch.com/shopify"/>
+
+</owl:Ontology>
+
+
+<!-- Apple -->
+<rdf:Description rdf:about="http://www.semanticsearch.com/amazon#Apple">
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#Apple"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#Apple"/>
+</rdf:Description>
+
+
+<!-- Samsung -->
+<rdf:Description rdf:about="http://www.semanticsearch.com/amazon#Samsung">
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#Samsung"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#Samsung"/>
+</rdf:Description>
+
+
+<!-- OnePlus -->
+<rdf:Description rdf:about="http://www.semanticsearch.com/amazon#OnePlus">
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#OnePlus"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#OnePlus"/>
+</rdf:Description>
+
+
+<!-- Smartphone -->
+<rdf:Description rdf:about="http://www.semanticsearch.com/amazon#Smartphone">
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#Smartphone"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#Smartphone"/>
+</rdf:Description>
+
+
+<!-- Laptop -->
+<rdf:Description rdf:about="http://www.semanticsearch.com/amazon#Laptop">
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#Laptop"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#Laptop"/>
+</rdf:Description>
+
+
+<!-- Headphones -->
+<rdf:Description rdf:about="http://www.semanticsearch.com/amazon#Headphones">
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#Headphones"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#Headphones"/>
+</rdf:Description>
+
+</rdf:RDF>
