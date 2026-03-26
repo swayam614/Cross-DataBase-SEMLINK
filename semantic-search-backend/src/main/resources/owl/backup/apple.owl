@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticsearch.com/apple#"
+     xml:base="http://www.semanticsearch.com/apple"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="http://www.semanticsearch.com/schema#"
+     xmlns:apple="http://www.semanticsearch.com/apple#">
+
+<owl:Ontology rdf:about="http://www.semanticsearch.com/apple">
+    
+    <!-- Import Schema -->
+    <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
+
+</owl:Ontology>
+
+
+<!-- Source -->
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/apple#AppleStore">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Source"/>
+</owl:NamedIndividual>
+
+
+<!-- Brand -->
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/apple#Apple">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+</owl:NamedIndividual>
+
+
+<!-- Category -->
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/apple#Smartphone">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Category"/>
+</owl:NamedIndividual>
+
+
+<!-- Product -->
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/apple#iPhone15_AppleStore">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+
+    <schema:hasBrand rdf:resource="http://www.semanticsearch.com/apple#Apple"/>
+    <schema:hasCategory rdf:resource="http://www.semanticsearch.com/apple#Smartphone"/>
+    <schema:hasSource rdf:resource="http://www.semanticsearch.com/apple#AppleStore"/>
+
+    <!-- Slightly different price -->
+    <schema:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80999</schema:price>
+
+    <schema:productLink>https://apple.com/iphone15</schema:productLink>
+
+    <!-- SAME NAME (IMPORTANT FOR LINKING) -->
+    <schema:productName>Apple iPhone 15</schema:productName>
+
+    <schema:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</schema:rating>
+</owl:NamedIndividual>
+
+</rdf:RDF>

@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/swayampalrecha/ontologies/2026/2/untitled-ontology-20/"
+     xml:base="http://www.semanticweb.org/swayampalrecha/ontologies/2026/2/untitled-ontology-20/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticsearch.com/link">
+        <owl:imports rdf:resource="http://www.semanticsearch.com/amazon"/>
+        <owl:imports rdf:resource="http://www.semanticsearch.com/flipkart"/>
+        <owl:imports rdf:resource="http://www.semanticsearch.com/shopify"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#Apple -->
+
+    <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#Apple">
+        <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#Apple"/>
+        <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#Apple"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#Apple -->
+
+    <rdf:Description rdf:about="http://www.semanticsearch.com/flipkart#Apple"/>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#Apple -->
+
+    <rdf:Description rdf:about="http://www.semanticsearch.com/shopify#Apple"/>
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#Headphones -->
+
+    <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#Headphones">
+        <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#Headphones"/>
+        <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#Headphones"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#Headphones -->
+
+    <rdf:Description rdf:about="http://www.semanticsearch.com/flipkart#Headphones"/>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#Headphones -->
+
+    <rdf:Description rdf:about="http://www.semanticsearch.com/shopify#Headphones"/>
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#Laptop -->
+
+    <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#Laptop">
+        <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#Laptop"/>
+        <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#Laptop"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#Laptop -->
+
+    <rdf:Description rdf:about="http://www.semanticsearch.com/flipkart#Laptop"/>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#Laptop -->
+
+    <rdf:Description rdf:about="http://www.semanticsearch.com/shopify#Laptop"/>
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#OnePlus -->
+
+    <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#OnePlus">
+        <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#OnePlus"/>
+        <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#OnePlus"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#OnePlus -->
+
+    <rdf:Description rdf:about="http://www.semanticsearch.com/flipkart#OnePlus"/>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#OnePlus -->
+
+    <rdf:Description rdf:about="http://www.semanticsearch.com/shopify#OnePlus"/>
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#Samsung -->
+
+    <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#Samsung">
+        <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#Samsung"/>
+        <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#Samsung"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#Samsung -->
+
+    <rdf:Description rdf:about="http://www.semanticsearch.com/flipkart#Samsung"/>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#Samsung -->
+
+    <rdf:Description rdf:about="http://www.semanticsearch.com/shopify#Samsung"/>
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#Smartphone -->
+
+    <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#Smartphone">
+        <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#Smartphone"/>
+        <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#Smartphone"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#Smartphone -->
+
+    <rdf:Description rdf:about="http://www.semanticsearch.com/flipkart#Smartphone"/>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#Smartphone -->
+
+    <rdf:Description rdf:about="http://www.semanticsearch.com/shopify#Smartphone"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

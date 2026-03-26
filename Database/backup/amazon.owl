@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/swayampalrecha/ontologies/2026/2/untitled-ontology-16a/"
+     xml:base="http://www.semanticweb.org/swayampalrecha/ontologies/2026/2/untitled-ontology-16a/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:amazon="http://www.semanticsearch.com/amazon#">
+    <owl:Ontology rdf:about="http://www.semanticsearch.com/amazon">
+        <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#hasBrand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/amazon#hasBrand">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/amazon#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticsearch.com/amazon#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#hasCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/amazon#hasCategory">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/amazon#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticsearch.com/amazon#Category"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#hasSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/amazon#hasSource">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/amazon#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticsearch.com/amazon#Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/amazon#price">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/amazon#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#productLink -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/amazon#productLink">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/amazon#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#productName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/amazon#productName">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/amazon#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#rating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/amazon#rating">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/amazon#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#Brand -->
+
+    <owl:Class rdf:about="http://www.semanticsearch.com/amazon#Brand"/>
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#Category -->
+
+    <owl:Class rdf:about="http://www.semanticsearch.com/amazon#Category"/>
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#Product -->
+
+    <owl:Class rdf:about="http://www.semanticsearch.com/amazon#Product"/>
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#Source -->
+
+    <owl:Class rdf:about="http://www.semanticsearch.com/amazon#Source"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#Amazon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#Amazon">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/amazon#Source"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#Apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#Apple">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#Headphones -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#Headphones">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#Laptop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#Laptop">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#OnePlus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#OnePlus">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#Samsung -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#Samsung">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#Smartphone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#Smartphone">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/amazon#Category"/>
+        <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/amazon#iPhone15_Amazon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#iPhone15_Amazon">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/amazon#Product"/>
+        <amazon:hasBrand rdf:resource="http://www.semanticsearch.com/amazon#Apple"/>
+        <amazon:hasCategory rdf:resource="http://www.semanticsearch.com/amazon#Smartphone"/>
+        <amazon:hasSource rdf:resource="http://www.semanticsearch.com/amazon#Amazon"/>
+        <amazon:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">79999</amazon:price>
+        <amazon:productLink>https://amazon.in/iphone15</amazon:productLink>
+        <amazon:productName>Apple iPhone 15</amazon:productName>
+        <amazon:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</amazon:rating>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

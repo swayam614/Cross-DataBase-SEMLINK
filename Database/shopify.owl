@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticsearch.com/shopify#"
+     xml:base="http://www.semanticsearch.com/shopify"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="http://www.semanticsearch.com/schema#"
+     xmlns:shopify="http://www.semanticsearch.com/shopify#">
+
+<owl:Ontology rdf:about="http://www.semanticsearch.com/shopify">
+    <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
+</owl:Ontology>
+
+
+<!-- Source -->
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/shopify#Shopify">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Source"/>
+</owl:NamedIndividual>
+
+
+<!-- Brands -->
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/shopify#Apple">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/shopify#Dell">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/shopify#HP">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/shopify#Samsung">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/shopify#OnePlus">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+</owl:NamedIndividual>
+
+
+<!-- Categories -->
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/shopify#Smartphone">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Category"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/shopify#Laptop">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Category"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/shopify#Headphones">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Category"/>
+</owl:NamedIndividual>
+
+
+<!-- Product -->
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/shopify#DellXPS13_Shopify">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+
+    <schema:hasBrand rdf:resource="http://www.semanticsearch.com/shopify#Dell"/>
+    <schema:hasCategory rdf:resource="http://www.semanticsearch.com/shopify#Laptop"/>
+    <schema:hasSource rdf:resource="http://www.semanticsearch.com/shopify#Shopify"/>
+
+    <schema:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">125000</schema:price>
+    <schema:productLink>https://shopify.com/dellxps13</schema:productLink>
+    <schema:productName>Dell XPS 13</schema:productName>
+    <schema:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</schema:rating>
+</owl:NamedIndividual>
+
+</rdf:RDF>

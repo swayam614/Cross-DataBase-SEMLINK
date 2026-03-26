@@ -9,59 +9,172 @@
      xmlns:flipkart="http://www.semanticsearch.com/flipkart#">
 
 <owl:Ontology rdf:about="http://www.semanticsearch.com/flipkart">
-    
-    <!-- ✅ FIXED -->
     <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
-
 </owl:Ontology>
 
-
 <!-- Source -->
-<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#Flipkart">
-    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Source"/>
+<owl:NamedIndividual rdf:about="#Flipkart">
+    <rdf:type rdf:resource="schema:Source"/>
 </owl:NamedIndividual>
-
 
 <!-- Brands -->
-<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#Apple">
-    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+<owl:NamedIndividual rdf:about="#Apple">
+    <rdf:type rdf:resource="schema:Brand"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#Samsung">
-    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+<owl:NamedIndividual rdf:about="#Samsung">
+    <rdf:type rdf:resource="schema:Brand"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#OnePlus">
-    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+<owl:NamedIndividual rdf:about="#OnePlus">
+    <rdf:type rdf:resource="schema:Brand"/>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="#Dell">
+    <rdf:type rdf:resource="schema:Brand"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#HP">
+    <rdf:type rdf:resource="schema:Brand"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sony">
+    <rdf:type rdf:resource="schema:Brand"/>
+</owl:NamedIndividual>
 
 <!-- Categories -->
-<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#Smartphone">
-    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Category"/>
+<owl:NamedIndividual rdf:about="#Smartphone">
+    <rdf:type rdf:resource="schema:Category"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#Laptop">
-    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Category"/>
+<owl:NamedIndividual rdf:about="#Laptop">
+    <rdf:type rdf:resource="schema:Category"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#Headphones">
-    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Category"/>
+<owl:NamedIndividual rdf:about="#Headphones">
+    <rdf:type rdf:resource="schema:Category"/>
 </owl:NamedIndividual>
 
+<!-- PRODUCTS -->
 
-<!-- Product -->
-<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#iPhone15_Flipkart">
+<!-- 1 -->
+<owl:NamedIndividual rdf:about="#iPhone15_Flipkart">
     <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
-
-    <schema:hasBrand rdf:resource="http://www.semanticsearch.com/flipkart#Apple"/>
-    <schema:hasCategory rdf:resource="http://www.semanticsearch.com/flipkart#Smartphone"/>
-    <schema:hasSource rdf:resource="http://www.semanticsearch.com/flipkart#Flipkart"/>
-
-    <schema:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">78999</schema:price>
+    <schema:hasBrand rdf:resource="#Apple"/>
+    <schema:hasCategory rdf:resource="#Smartphone"/>
+    <schema:hasSource rdf:resource="#Flipkart"/>
+    <schema:price rdf:datatype="xsd:decimal">78999</schema:price>
     <schema:productLink>https://flipkart.com/iphone15</schema:productLink>
     <schema:productName>Apple iPhone 15</schema:productName>
-    <schema:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</schema:rating>
+    <schema:rating rdf:datatype="xsd:decimal">4.5</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 2 -->
+<owl:NamedIndividual rdf:about="#GalaxyS23_Flipkart">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Samsung"/>
+    <schema:hasCategory rdf:resource="#Smartphone"/>
+    <schema:hasSource rdf:resource="#Flipkart"/>
+    <schema:price rdf:datatype="xsd:decimal">68999</schema:price>
+    <schema:productLink>https://flipkart.com/galaxys23</schema:productLink>
+    <schema:productName>Samsung Galaxy S23</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.4</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 3 -->
+<owl:NamedIndividual rdf:about="#OnePlus11_Flipkart">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#OnePlus"/>
+    <schema:hasCategory rdf:resource="#Smartphone"/>
+    <schema:hasSource rdf:resource="#Flipkart"/>
+    <schema:price rdf:datatype="xsd:decimal">55999</schema:price>
+    <schema:productLink>https://flipkart.com/oneplus11</schema:productLink>
+    <schema:productName>OnePlus 11</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.3</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 4 -->
+<owl:NamedIndividual rdf:about="#MacBookAirM2_Flipkart">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Apple"/>
+    <schema:hasCategory rdf:resource="#Laptop"/>
+    <schema:hasSource rdf:resource="#Flipkart"/>
+    <schema:price rdf:datatype="xsd:decimal">102999</schema:price>
+    <schema:productLink>https://flipkart.com/macbookm2</schema:productLink>
+    <schema:productName>Apple MacBook Air M2</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.6</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 5 -->
+<owl:NamedIndividual rdf:about="#DellXPS13_Flipkart">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Dell"/>
+    <schema:hasCategory rdf:resource="#Laptop"/>
+    <schema:hasSource rdf:resource="#Flipkart"/>
+    <schema:price rdf:datatype="xsd:decimal">97999</schema:price>
+    <schema:productLink>https://flipkart.com/dellxps13</schema:productLink>
+    <schema:productName>Dell XPS 13</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.4</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 6 -->
+<owl:NamedIndividual rdf:about="#HPVictus_Flipkart">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#HP"/>
+    <schema:hasCategory rdf:resource="#Laptop"/>
+    <schema:hasSource rdf:resource="#Flipkart"/>
+    <schema:price rdf:datatype="xsd:decimal">73999</schema:price>
+    <schema:productLink>https://flipkart.com/hpvictus</schema:productLink>
+    <schema:productName>HP Victus</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.2</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 7 -->
+<owl:NamedIndividual rdf:about="#SonyWH1000XM5_Flipkart">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Sony"/>
+    <schema:hasCategory rdf:resource="#Headphones"/>
+    <schema:hasSource rdf:resource="#Flipkart"/>
+    <schema:price rdf:datatype="xsd:decimal">28999</schema:price>
+    <schema:productLink>https://flipkart.com/sonywh1000xm5</schema:productLink>
+    <schema:productName>Sony WH-1000XM5</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.7</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 8 -->
+<owl:NamedIndividual rdf:about="#AirPodsPro_Flipkart">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Apple"/>
+    <schema:hasCategory rdf:resource="#Headphones"/>
+    <schema:hasSource rdf:resource="#Flipkart"/>
+    <schema:price rdf:datatype="xsd:decimal">23999</schema:price>
+    <schema:productLink>https://flipkart.com/airpodspro</schema:productLink>
+    <schema:productName>Apple AirPods Pro</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.6</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 9 -->
+<owl:NamedIndividual rdf:about="#GalaxyBuds2_Flipkart">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Samsung"/>
+    <schema:hasCategory rdf:resource="#Headphones"/>
+    <schema:hasSource rdf:resource="#Flipkart"/>
+    <schema:price rdf:datatype="xsd:decimal">10999</schema:price>
+    <schema:productLink>https://flipkart.com/galaxybuds2</schema:productLink>
+    <schema:productName>Samsung Galaxy Buds 2</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.3</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 10 -->
+<owl:NamedIndividual rdf:about="#OnePlusNord3_Flipkart">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#OnePlus"/>
+    <schema:hasCategory rdf:resource="#Smartphone"/>
+    <schema:hasSource rdf:resource="#Flipkart"/>
+    <schema:price rdf:datatype="xsd:decimal">32999</schema:price>
+    <schema:productLink>https://flipkart.com/nord3</schema:productLink>
+    <schema:productName>OnePlus Nord 3</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.2</schema:rating>
 </owl:NamedIndividual>
 
 </rdf:RDF>

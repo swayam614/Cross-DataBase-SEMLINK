@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticsearch.com/flipkart#"
+     xml:base="http://www.semanticsearch.com/flipkart"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="http://www.semanticsearch.com/schema#"
+     xmlns:flipkart="http://www.semanticsearch.com/flipkart#">
+
+<owl:Ontology rdf:about="http://www.semanticsearch.com/flipkart">
+    <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
+</owl:Ontology>
+
+
+<!-- Source -->
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#Flipkart">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Source"/>
+</owl:NamedIndividual>
+
+
+<!-- Brands -->
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#Apple">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#Samsung">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#OnePlus">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+</owl:NamedIndividual>
+
+
+<!-- Categories -->
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#Smartphone">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Category"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#Laptop">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Category"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#Headphones">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Category"/>
+</owl:NamedIndividual>
+
+
+<!-- Product -->
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#iPhone15_Flipkart">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+
+    <schema:hasBrand rdf:resource="http://www.semanticsearch.com/flipkart#Apple"/>
+    <schema:hasCategory rdf:resource="http://www.semanticsearch.com/flipkart#Smartphone"/>
+    <schema:hasSource rdf:resource="http://www.semanticsearch.com/flipkart#Flipkart"/>
+
+    <schema:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">78999</schema:price>
+    <schema:productLink>https://flipkart.com/iphone15</schema:productLink>
+    <schema:productName>Apple iPhone 15</schema:productName>
+    <schema:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</schema:rating>
+</owl:NamedIndividual>
+
+</rdf:RDF>

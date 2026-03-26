@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/swayampalrecha/ontologies/2026/2/untitled-ontology-19/"
+     xml:base="http://www.semanticweb.org/swayampalrecha/ontologies/2026/2/untitled-ontology-19/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:shopify="http://www.semanticsearch.com/shopify#">
+    <owl:Ontology rdf:about="http://www.semanticsearch.com/shopify">
+        <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#hasBrand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/shopify#hasBrand">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/shopify#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticsearch.com/shopify#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#hasCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/shopify#hasCategory">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/shopify#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticsearch.com/shopify#Category"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#hasSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/shopify#hasSource">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/shopify#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticsearch.com/shopify#Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/shopify#price">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/shopify#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#productLink -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/shopify#productLink">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/shopify#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#productName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/shopify#productName">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/shopify#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#rating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/shopify#rating">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/shopify#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#Brand -->
+
+    <owl:Class rdf:about="http://www.semanticsearch.com/shopify#Brand"/>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#Category -->
+
+    <owl:Class rdf:about="http://www.semanticsearch.com/shopify#Category"/>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#Product -->
+
+    <owl:Class rdf:about="http://www.semanticsearch.com/shopify#Product"/>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#Source -->
+
+    <owl:Class rdf:about="http://www.semanticsearch.com/shopify#Source"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#Apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/shopify#Apple">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/shopify#Brand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#Dell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/shopify#Dell">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/shopify#Brand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#DellXPS13_Shopify -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/shopify#DellXPS13_Shopify">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/shopify#Product"/>
+        <shopify:hasBrand rdf:resource="http://www.semanticsearch.com/shopify#Dell"/>
+        <shopify:hasCategory rdf:resource="http://www.semanticsearch.com/shopify#Laptop"/>
+        <shopify:hasSource rdf:resource="http://www.semanticsearch.com/shopify#Shopify"/>
+        <shopify:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">125000</shopify:price>
+        <shopify:productLink>https://shopify.com/dellxps13</shopify:productLink>
+        <shopify:productName>Dell XPS 13</shopify:productName>
+        <shopify:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</shopify:rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#HP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/shopify#HP">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/shopify#Brand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#Headphones -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/shopify#Headphones">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/shopify#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#Laptop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/shopify#Laptop">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/shopify#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#OnePlus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/shopify#OnePlus">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/shopify#Brand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#Samsung -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/shopify#Samsung">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/shopify#Brand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#Shopify -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/shopify#Shopify">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/shopify#Source"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/shopify#Smartphone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/shopify#Smartphone">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/shopify#Category"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

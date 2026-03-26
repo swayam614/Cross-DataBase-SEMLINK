@@ -9,7 +9,10 @@
      xmlns:flipkart="http://www.semanticsearch.com/flipkart#">
 
 <owl:Ontology rdf:about="http://www.semanticsearch.com/flipkart">
+    
+    <!-- ✅ FIXED -->
     <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
+
 </owl:Ontology>
 
 

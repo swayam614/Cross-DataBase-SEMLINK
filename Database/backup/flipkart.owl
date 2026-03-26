@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/swayampalrecha/ontologies/2026/2/untitled-ontology-18/"
+     xml:base="http://www.semanticweb.org/swayampalrecha/ontologies/2026/2/untitled-ontology-18/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:flipkart="http://www.semanticsearch.com/flipkart#">
+    <owl:Ontology rdf:about="http://www.semanticsearch.com/flipkart">
+        <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#hasBrand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/flipkart#hasBrand">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/flipkart#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticsearch.com/flipkart#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#hasCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/flipkart#hasCategory">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/flipkart#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticsearch.com/flipkart#Category"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#hasSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/flipkart#hasSource">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/flipkart#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticsearch.com/flipkart#Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/flipkart#price">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/flipkart#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#productLink -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/flipkart#productLink">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/flipkart#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#productName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/flipkart#productName">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/flipkart#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#rating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/flipkart#rating">
+        <rdfs:domain rdf:resource="http://www.semanticsearch.com/flipkart#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#Brand -->
+
+    <owl:Class rdf:about="http://www.semanticsearch.com/flipkart#Brand"/>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#Category -->
+
+    <owl:Class rdf:about="http://www.semanticsearch.com/flipkart#Category"/>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#Product -->
+
+    <owl:Class rdf:about="http://www.semanticsearch.com/flipkart#Product"/>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#Source -->
+
+    <owl:Class rdf:about="http://www.semanticsearch.com/flipkart#Source"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#Apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#Apple">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/flipkart#Brand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#Flipkart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#Flipkart">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/flipkart#Source"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#Headphones -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#Headphones">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/flipkart#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#Laptop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#Laptop">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/flipkart#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#OnePlus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#OnePlus">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/flipkart#Brand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#Samsung -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#Samsung">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/flipkart#Brand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#Smartphone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#Smartphone">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/flipkart#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticsearch.com/flipkart#iPhone15_Flipkart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/flipkart#iPhone15_Flipkart">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/flipkart#Product"/>
+        <flipkart:hasBrand rdf:resource="http://www.semanticsearch.com/flipkart#Apple"/>
+        <flipkart:hasCategory rdf:resource="http://www.semanticsearch.com/flipkart#Smartphone"/>
+        <flipkart:hasSource rdf:resource="http://www.semanticsearch.com/flipkart#Flipkart"/>
+        <flipkart:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">78999</flipkart:price>
+        <flipkart:productLink>https://flipkart.com/iphone15</flipkart:productLink>
+        <flipkart:productName>Apple iPhone 15</flipkart:productName>
+        <flipkart:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</flipkart:rating>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

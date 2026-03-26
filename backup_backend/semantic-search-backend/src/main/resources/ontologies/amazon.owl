@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticsearch.com/amazon#"
+     xml:base="http://www.semanticsearch.com/amazon"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="http://www.semanticsearch.com/schema#"
+     xmlns:amazon="http://www.semanticsearch.com/amazon#">
+
+<owl:Ontology rdf:about="http://www.semanticsearch.com/amazon">
+    
+    <!-- ✅ FIXED: use classpath -->
+    <owl:imports rdf:resource="classpath:/owl/schema.owl"/>
+
+</owl:Ontology>
+
+
+<!-- Source -->
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#Amazon">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Source"/>
+</owl:NamedIndividual>
+
+
+<!-- Brands -->
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#Apple">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#Samsung">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#OnePlus">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+</owl:NamedIndividual>
+
+
+<!-- Categories -->
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#Smartphone">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Category"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#Laptop">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Category"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#Headphones">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Category"/>
+</owl:NamedIndividual>
+
+
+<!-- Product -->
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#iPhone15_Amazon">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+
+    <schema:hasBrand rdf:resource="http://www.semanticsearch.com/amazon#Apple"/>
+    <schema:hasCategory rdf:resource="http://www.semanticsearch.com/amazon#Smartphone"/>
+    <schema:hasSource rdf:resource="http://www.semanticsearch.com/amazon#Amazon"/>
+
+    <schema:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">79999</schema:price>
+    <schema:productLink>https://amazon.in/iphone15</schema:productLink>
+    <schema:productName>Apple iPhone 15</schema:productName>
+    <schema:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</schema:rating>
+</owl:NamedIndividual>
+
+</rdf:RDF>

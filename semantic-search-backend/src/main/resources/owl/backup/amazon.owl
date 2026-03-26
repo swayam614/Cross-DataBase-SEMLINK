@@ -9,7 +9,10 @@
      xmlns:amazon="http://www.semanticsearch.com/amazon#">
 
 <owl:Ontology rdf:about="http://www.semanticsearch.com/amazon">
+    
+    <!-- ✅ FIXED -->
     <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
+
 </owl:Ontology>
 
 

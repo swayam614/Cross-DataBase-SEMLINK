@@ -9,18 +9,13 @@
      xmlns:amazon="http://www.semanticsearch.com/amazon#">
 
 <owl:Ontology rdf:about="http://www.semanticsearch.com/amazon">
-    
-    <!-- ✅ FIXED -->
     <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
-
 </owl:Ontology>
-
 
 <!-- Source -->
 <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#Amazon">
     <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Source"/>
 </owl:NamedIndividual>
-
 
 <!-- Brands -->
 <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#Apple">
@@ -35,6 +30,17 @@
     <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#Dell">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#HP">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#Sony">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+</owl:NamedIndividual>
 
 <!-- Categories -->
 <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#Smartphone">
@@ -49,19 +55,126 @@
     <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Category"/>
 </owl:NamedIndividual>
 
+<!-- PRODUCTS -->
 
-<!-- Product -->
+<!-- 1 -->
 <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/amazon#iPhone15_Amazon">
     <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
-
-    <schema:hasBrand rdf:resource="http://www.semanticsearch.com/amazon#Apple"/>
-    <schema:hasCategory rdf:resource="http://www.semanticsearch.com/amazon#Smartphone"/>
-    <schema:hasSource rdf:resource="http://www.semanticsearch.com/amazon#Amazon"/>
-
-    <schema:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">79999</schema:price>
+    <schema:hasBrand rdf:resource="#Apple"/>
+    <schema:hasCategory rdf:resource="#Smartphone"/>
+    <schema:hasSource rdf:resource="#Amazon"/>
+    <schema:price rdf:datatype="xsd:decimal">79999</schema:price>
     <schema:productLink>https://amazon.in/iphone15</schema:productLink>
     <schema:productName>Apple iPhone 15</schema:productName>
-    <schema:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</schema:rating>
+    <schema:rating rdf:datatype="xsd:decimal">4.6</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 2 -->
+<owl:NamedIndividual rdf:about="#GalaxyS23_Amazon">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Samsung"/>
+    <schema:hasCategory rdf:resource="#Smartphone"/>
+    <schema:hasSource rdf:resource="#Amazon"/>
+    <schema:price rdf:datatype="xsd:decimal">69999</schema:price>
+    <schema:productLink>https://amazon.in/galaxys23</schema:productLink>
+    <schema:productName>Samsung Galaxy S23</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.5</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 3 -->
+<owl:NamedIndividual rdf:about="#OnePlus11_Amazon">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#OnePlus"/>
+    <schema:hasCategory rdf:resource="#Smartphone"/>
+    <schema:hasSource rdf:resource="#Amazon"/>
+    <schema:price rdf:datatype="xsd:decimal">56999</schema:price>
+    <schema:productLink>https://amazon.in/oneplus11</schema:productLink>
+    <schema:productName>OnePlus 11</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.4</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 4 -->
+<owl:NamedIndividual rdf:about="#MacBookAirM2_Amazon">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Apple"/>
+    <schema:hasCategory rdf:resource="#Laptop"/>
+    <schema:hasSource rdf:resource="#Amazon"/>
+    <schema:price rdf:datatype="xsd:decimal">104999</schema:price>
+    <schema:productLink>https://amazon.in/macbookm2</schema:productLink>
+    <schema:productName>Apple MacBook Air M2</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.7</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 5 -->
+<owl:NamedIndividual rdf:about="#DellXPS13_Amazon">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Dell"/>
+    <schema:hasCategory rdf:resource="#Laptop"/>
+    <schema:hasSource rdf:resource="#Amazon"/>
+    <schema:price rdf:datatype="xsd:decimal">99999</schema:price>
+    <schema:productLink>https://amazon.in/dellxps13</schema:productLink>
+    <schema:productName>Dell XPS 13</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.5</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 6 -->
+<owl:NamedIndividual rdf:about="#HPVictus_Amazon">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#HP"/>
+    <schema:hasCategory rdf:resource="#Laptop"/>
+    <schema:hasSource rdf:resource="#Amazon"/>
+    <schema:price rdf:datatype="xsd:decimal">74999</schema:price>
+    <schema:productLink>https://amazon.in/hpvictus</schema:productLink>
+    <schema:productName>HP Victus</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.3</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 7 -->
+<owl:NamedIndividual rdf:about="#SonyWH1000XM5_Amazon">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Sony"/>
+    <schema:hasCategory rdf:resource="#Headphones"/>
+    <schema:hasSource rdf:resource="#Amazon"/>
+    <schema:price rdf:datatype="xsd:decimal">29999</schema:price>
+    <schema:productLink>https://amazon.in/sonywh1000xm5</schema:productLink>
+    <schema:productName>Sony WH-1000XM5</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.8</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 8 -->
+<owl:NamedIndividual rdf:about="#AirPodsPro_Amazon">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Apple"/>
+    <schema:hasCategory rdf:resource="#Headphones"/>
+    <schema:hasSource rdf:resource="#Amazon"/>
+    <schema:price rdf:datatype="xsd:decimal">24999</schema:price>
+    <schema:productLink>https://amazon.in/airpodspro</schema:productLink>
+    <schema:productName>Apple AirPods Pro</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.7</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 9 -->
+<owl:NamedIndividual rdf:about="#GalaxyBuds2_Amazon">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Samsung"/>
+    <schema:hasCategory rdf:resource="#Headphones"/>
+    <schema:hasSource rdf:resource="#Amazon"/>
+    <schema:price rdf:datatype="xsd:decimal">11999</schema:price>
+    <schema:productLink>https://amazon.in/galaxybuds2</schema:productLink>
+    <schema:productName>Samsung Galaxy Buds 2</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.4</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 10 -->
+<owl:NamedIndividual rdf:about="#OnePlusNord3_Amazon">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#OnePlus"/>
+    <schema:hasCategory rdf:resource="#Smartphone"/>
+    <schema:hasSource rdf:resource="#Amazon"/>
+    <schema:price rdf:datatype="xsd:decimal">33999</schema:price>
+    <schema:productLink>https://amazon.in/nord3</schema:productLink>
+    <schema:productName>OnePlus Nord 3</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.3</schema:rating>
 </owl:NamedIndividual>
 
 </rdf:RDF>

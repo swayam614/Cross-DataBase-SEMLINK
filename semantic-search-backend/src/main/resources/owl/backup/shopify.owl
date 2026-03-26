@@ -9,7 +9,10 @@
      xmlns:shopify="http://www.semanticsearch.com/shopify#">
 
 <owl:Ontology rdf:about="http://www.semanticsearch.com/shopify">
+    
+    <!-- ✅ FIXED -->
     <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
+
 </owl:Ontology>
 
 

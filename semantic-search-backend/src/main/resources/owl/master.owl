@@ -1,17 +1,169 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticsearch.com/master#"
-     xml:base="http://www.semanticsearch.com/master"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-
-<owl:Ontology rdf:about="http://www.semanticsearch.com/master">
-
-    <!-- ✅ FIXED: use logical IRIs -->
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:schema="http://www.semanticsearch.com/schema#"
+    xmlns:ebay="http://www.semanticsearch.com/ebay#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:j.0="schema:"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://www.semanticsearch.com/master">
     <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
+    <owl:imports rdf:resource="http://www.semanticsearch.com/amazon"/>
+    <owl:imports rdf:resource="http://www.semanticsearch.com/flipkart"/>
+    <owl:imports rdf:resource="http://www.semanticsearch.com/shopify"/>
     <owl:imports rdf:resource="http://www.semanticsearch.com/link"/>
-
-</owl:Ontology>
-
+  </owl:Ontology>
+  <owl:Ontology rdf:about="http://www.semanticsearch.com/ebay">
+    <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
+  </owl:Ontology>
+  <j.0:Product rdf:about="http://www.semanticsearch.com/ebay#OnePlusNord3_eBay">
+    <schema:hasSource>
+      <j.0:Source rdf:about="http://www.semanticsearch.com/ebay#eBay">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </j.0:Source>
+    </schema:hasSource>
+    <schema:price rdf:datatype="xsd:decimal">31900</schema:price>
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:productLink>https://ebay.com/nord3</schema:productLink>
+    <schema:rating rdf:datatype="xsd:decimal">4.2</schema:rating>
+    <schema:hasBrand>
+      <j.0:Brand rdf:about="http://www.semanticsearch.com/ebay#OnePlus">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </j.0:Brand>
+    </schema:hasBrand>
+    <schema:productName>OnePlus Nord 3</schema:productName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <schema:hasCategory>
+      <j.0:Category rdf:about="http://www.semanticsearch.com/ebay#Smartphone">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </j.0:Category>
+    </schema:hasCategory>
+  </j.0:Product>
+  <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/ebay#iPhone15_eBay">
+    <schema:hasSource rdf:resource="http://www.semanticsearch.com/ebay#eBay"/>
+    <schema:rating rdf:datatype="xsd:decimal">4.5</schema:rating>
+    <schema:hasBrand>
+      <j.0:Brand rdf:about="http://www.semanticsearch.com/ebay#Apple">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </j.0:Brand>
+    </schema:hasBrand>
+    <schema:productLink>https://ebay.com/iphone15</schema:productLink>
+    <rdf:type rdf:resource="schema:Product"/>
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:price rdf:datatype="xsd:decimal">78500</schema:price>
+    <schema:hasCategory rdf:resource="http://www.semanticsearch.com/ebay#Smartphone"/>
+    <schema:productName>Apple iPhone 15</schema:productName>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/ebay#HPVictus_eBay">
+    <schema:hasBrand>
+      <j.0:Brand rdf:about="http://www.semanticsearch.com/ebay#HP">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </j.0:Brand>
+    </schema:hasBrand>
+    <schema:rating rdf:datatype="xsd:decimal">4.2</schema:rating>
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:productLink>https://ebay.com/hpvictus</schema:productLink>
+    <rdf:type rdf:resource="schema:Product"/>
+    <schema:price rdf:datatype="xsd:decimal">72000</schema:price>
+    <schema:productName>HP Victus</schema:productName>
+    <schema:hasSource rdf:resource="http://www.semanticsearch.com/ebay#eBay"/>
+    <schema:hasCategory>
+      <j.0:Category rdf:about="http://www.semanticsearch.com/ebay#Laptop">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </j.0:Category>
+    </schema:hasCategory>
+  </owl:NamedIndividual>
+  <schema:Product rdf:about="http://www.semanticsearch.com/ebay#SonyWH1000XM5_eBay">
+    <schema:hasBrand>
+      <j.0:Brand rdf:about="http://www.semanticsearch.com/ebay#Sony">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </j.0:Brand>
+    </schema:hasBrand>
+    <schema:rating rdf:datatype="xsd:decimal">4.7</schema:rating>
+    <schema:productName>Sony WH-1000XM5</schema:productName>
+    <schema:productLink>https://ebay.com/sonywh1000xm5</schema:productLink>
+    <schema:price rdf:datatype="xsd:decimal">29500</schema:price>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <schema:hasSource rdf:resource="http://www.semanticsearch.com/ebay#eBay"/>
+    <rdf:type rdf:resource="schema:Product"/>
+    <schema:hasCategory>
+      <j.0:Category rdf:about="http://www.semanticsearch.com/ebay#Headphones">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </j.0:Category>
+    </schema:hasCategory>
+  </schema:Product>
+  <schema:Product rdf:about="http://www.semanticsearch.com/ebay#AirPodsPro_eBay">
+    <schema:hasSource rdf:resource="http://www.semanticsearch.com/ebay#eBay"/>
+    <rdf:type rdf:resource="schema:Product"/>
+    <schema:hasBrand rdf:resource="http://www.semanticsearch.com/ebay#Apple"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <schema:rating rdf:datatype="xsd:decimal">4.6</schema:rating>
+    <schema:hasCategory rdf:resource="http://www.semanticsearch.com/ebay#Headphones"/>
+    <schema:productName>Apple AirPods Pro</schema:productName>
+    <schema:price rdf:datatype="xsd:decimal">24500</schema:price>
+    <schema:productLink>https://ebay.com/airpodspro</schema:productLink>
+  </schema:Product>
+  <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/ebay#MacBookAirM2_eBay">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:price rdf:datatype="xsd:decimal">101000</schema:price>
+    <schema:rating rdf:datatype="xsd:decimal">4.6</schema:rating>
+    <schema:productLink>https://ebay.com/macbookm2</schema:productLink>
+    <schema:hasBrand rdf:resource="http://www.semanticsearch.com/ebay#Apple"/>
+    <schema:productName>Apple MacBook Air M2</schema:productName>
+    <schema:hasSource rdf:resource="http://www.semanticsearch.com/ebay#eBay"/>
+    <rdf:type rdf:resource="schema:Product"/>
+    <schema:hasCategory rdf:resource="http://www.semanticsearch.com/ebay#Laptop"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/ebay#DellXPS13_eBay">
+    <schema:productLink>https://ebay.com/dellxps13</schema:productLink>
+    <schema:hasBrand>
+      <j.0:Brand rdf:about="http://www.semanticsearch.com/ebay#Dell">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </j.0:Brand>
+    </schema:hasBrand>
+    <schema:price rdf:datatype="xsd:decimal">95000</schema:price>
+    <schema:hasSource rdf:resource="http://www.semanticsearch.com/ebay#eBay"/>
+    <rdf:type rdf:resource="schema:Product"/>
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:rating rdf:datatype="xsd:decimal">4.5</schema:rating>
+    <schema:hasCategory rdf:resource="http://www.semanticsearch.com/ebay#Laptop"/>
+    <schema:productName>Dell XPS 13</schema:productName>
+  </owl:NamedIndividual>
+  <j.0:Product rdf:about="http://www.semanticsearch.com/ebay#OnePlus11_eBay">
+    <schema:hasSource rdf:resource="http://www.semanticsearch.com/ebay#eBay"/>
+    <schema:productLink>https://ebay.com/oneplus11</schema:productLink>
+    <schema:hasBrand rdf:resource="http://www.semanticsearch.com/ebay#OnePlus"/>
+    <schema:rating rdf:datatype="xsd:decimal">4.3</schema:rating>
+    <schema:hasCategory rdf:resource="http://www.semanticsearch.com/ebay#Smartphone"/>
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:price rdf:datatype="xsd:decimal">54900</schema:price>
+    <schema:productName>OnePlus 11</schema:productName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </j.0:Product>
+  <j.0:Product rdf:about="http://www.semanticsearch.com/ebay#GalaxyS23_eBay">
+    <schema:hasSource rdf:resource="http://www.semanticsearch.com/ebay#eBay"/>
+    <schema:productLink>https://ebay.com/galaxys23</schema:productLink>
+    <schema:productName>Samsung Galaxy S23</schema:productName>
+    <schema:hasCategory rdf:resource="http://www.semanticsearch.com/ebay#Smartphone"/>
+    <schema:hasBrand>
+      <j.0:Brand rdf:about="http://www.semanticsearch.com/ebay#Samsung">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </j.0:Brand>
+    </schema:hasBrand>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:rating rdf:datatype="xsd:decimal">4.4</schema:rating>
+    <schema:price rdf:datatype="xsd:decimal">67500</schema:price>
+  </j.0:Product>
+  <schema:Product rdf:about="http://www.semanticsearch.com/ebay#GalaxyBuds2_eBay">
+    <schema:hasSource rdf:resource="http://www.semanticsearch.com/ebay#eBay"/>
+    <schema:price rdf:datatype="xsd:decimal">10500</schema:price>
+    <schema:hasCategory rdf:resource="http://www.semanticsearch.com/ebay#Headphones"/>
+    <schema:rating rdf:datatype="xsd:decimal">4.3</schema:rating>
+    <schema:productName>Samsung Galaxy Buds 2</schema:productName>
+    <schema:productLink>https://ebay.com/galaxybuds2</schema:productLink>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <schema:hasBrand rdf:resource="http://www.semanticsearch.com/ebay#Samsung"/>
+    <rdf:type rdf:resource="schema:Product"/>
+  </schema:Product>
 </rdf:RDF>
