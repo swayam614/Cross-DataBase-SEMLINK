@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticsearch.com/test#"
+     xml:base="http://www.semanticsearch.com/test"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="http://www.semanticsearch.com/schema#"
+     xmlns:test="http://www.semanticsearch.com/test#">
+
+<owl:Ontology rdf:about="http://www.semanticsearch.com/test">
+    <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
+</owl:Ontology>
+
+<!-- Source -->
+<owl:NamedIndividual rdf:about="#TestStore">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Source"/>
+</owl:NamedIndividual>
+
+<!-- Brands -->
+<owl:NamedIndividual rdf:about="#Apple">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Samsung">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+</owl:NamedIndividual>
+
+<!-- Category -->
+<owl:NamedIndividual rdf:about="#Smartphone">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Category"/>
+</owl:NamedIndividual>
+
+<!-- PRODUCTS -->
+
+<!-- 1 -->
+<owl:NamedIndividual rdf:about="#iPhone15_Test">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Apple"/>
+    <schema:hasCategory rdf:resource="#Smartphone"/>
+    <schema:hasSource rdf:resource="#TestStore"/>
+    <schema:price rdf:datatype="xsd:decimal">81000</schema:price>
+    <schema:productLink>https://test.com/iphone15</schema:productLink>
+    <schema:productName>Apple iPhone 15</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.7</schema:rating>
+    <schema:createdAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-27T10:00:00</schema:createdAt>
+</owl:NamedIndividual>
+
+<!-- 2 -->
+<owl:NamedIndividual rdf:about="#GalaxyS23_Test">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Samsung"/>
+    <schema:hasCategory rdf:resource="#Smartphone"/>
+    <schema:hasSource rdf:resource="#TestStore"/>
+    <schema:price rdf:datatype="xsd:decimal">71000</schema:price>
+    <schema:productLink>https://test.com/galaxys23</schema:productLink>
+    <schema:productName>Samsung Galaxy S23</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.6</schema:rating>
+    <schema:createdAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-26T18:30:00</schema:createdAt>
+</owl:NamedIndividual>
+
+<!-- 3 -->
+<owl:NamedIndividual rdf:about="#OnePlus11_Test">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Apple"/>
+    <schema:hasCategory rdf:resource="#Smartphone"/>
+    <schema:hasSource rdf:resource="#TestStore"/>
+    <schema:price rdf:datatype="xsd:decimal">58000</schema:price>
+    <schema:productLink>https://test.com/oneplus11</schema:productLink>
+    <schema:productName>OnePlus 11</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.5</schema:rating>
+    <schema:createdAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-25T12:15:00</schema:createdAt>
+</owl:NamedIndividual>
+
+<!-- 4 -->
+<owl:NamedIndividual rdf:about="#Pixel8_Test">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Apple"/>
+    <schema:hasCategory rdf:resource="#Smartphone"/>
+    <schema:hasSource rdf:resource="#TestStore"/>
+    <schema:price rdf:datatype="xsd:decimal">69000</schema:price>
+    <schema:productLink>https://test.com/pixel8</schema:productLink>
+    <schema:productName>Google Pixel 8</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.4</schema:rating>
+    <schema:createdAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-24T09:45:00</schema:createdAt>
+</owl:NamedIndividual>
+
+<!-- 5 -->
+<owl:NamedIndividual rdf:about="#NothingPhone2_Test">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Samsung"/>
+    <schema:hasCategory rdf:resource="#Smartphone"/>
+    <schema:hasSource rdf:resource="#TestStore"/>
+    <schema:price rdf:datatype="xsd:decimal">45000</schema:price>
+    <schema:productLink>https://test.com/nothing2</schema:productLink>
+    <schema:productName>Nothing Phone 2</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.3</schema:rating>
+    <schema:createdAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-23T14:00:00</schema:createdAt>
+</owl:NamedIndividual>
+
+</rdf:RDF>

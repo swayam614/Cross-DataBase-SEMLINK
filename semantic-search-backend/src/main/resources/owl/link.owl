@@ -4,74 +4,84 @@
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
   <owl:Ontology rdf:about="http://www.semanticsearch.com/link">
-    <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
-    <owl:imports rdf:resource="http://www.semanticsearch.com/amazon"/>
-    <owl:imports rdf:resource="http://www.semanticsearch.com/flipkart"/>
     <owl:imports rdf:resource="http://www.semanticsearch.com/shopify"/>
+    <owl:imports rdf:resource="http://www.semanticsearch.com/flipkart"/>
+    <owl:imports rdf:resource="http://www.semanticsearch.com/amazon"/>
+    <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
   </owl:Ontology>
   <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#iPhone15_Amazon">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#iPhone15_Flipkart"/>
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#iPhone15_Shopify"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#iPhone15_Flipkart"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#Apple">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#Apple"/>
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#Apple"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#Apple"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#OnePlusNord3_Amazon">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#OnePlusNord3_Flipkart"/>
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#OnePlusNord3_Shopify"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#OnePlusNord3_Flipkart"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#OnePlus">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#OnePlus"/>
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#OnePlus"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#OnePlus"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#HP">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#HP"/>
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#HP"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#HP"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#AirPodsPro_Amazon">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#AirPodsPro_Flipkart"/>
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#AirPodsPro_Shopify"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#AirPodsPro_Flipkart"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#GalaxyS23_Amazon">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#GalaxyS23_Flipkart"/>
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#GalaxyS23_Shopify"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#GalaxyS23_Flipkart"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#DellXPS13_Amazon">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#DellXPS13_Flipkart"/>
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#DellXPS13_Shopify"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#DellXPS13_Flipkart"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/test#iPhone15_Test">
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/ebay#iPhone15_eBay"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#Sony">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#Sony"/>
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#Sony"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#Sony"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#GalaxyBuds2_Amazon">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#GalaxyBuds2_Flipkart"/>
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#GalaxyBuds2_Shopify"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#GalaxyBuds2_Flipkart"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/test#OnePlus11_Test">
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/ebay#OnePlus11_eBay"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#HPVictus_Amazon">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#HPVictus_Flipkart"/>
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#HPVictus_Shopify"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#HPVictus_Flipkart"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#OnePlus11_Amazon">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#OnePlus11_Flipkart"/>
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#OnePlus11_Shopify"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#OnePlus11_Flipkart"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#MacBookAirM2_Amazon">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#MacBookAirM2_Flipkart"/>
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#MacBookAirM2_Shopify"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#MacBookAirM2_Flipkart"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#SonyWH1000XM5_Amazon">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#SonyWH1000XM5_Flipkart"/>
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#SonyWH1000XM5_Shopify"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#SonyWH1000XM5_Flipkart"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#Dell">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#Dell"/>
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#Dell"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#Dell"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/test#GalaxyS23_Test">
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/ebay#GalaxyS23_eBay"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/samsung#GalaxyS23_Samsung"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#Samsung">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#Samsung"/>
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#Samsung"/>
+    <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#Samsung"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticsearch.com/ebay#SonyWH1000XM5_eBay">
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/ebay#SonyWH1000XM5_eBay"/>
@@ -85,17 +95,8 @@
   <rdf:Description rdf:about="http://www.semanticsearch.com/ebay#DellXPS13_eBay">
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/ebay#DellXPS13_eBay"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticsearch.com/ebay#OnePlus11_eBay">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/ebay#OnePlus11_eBay"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticsearch.com/ebay#OnePlusNord3_eBay">
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/ebay#OnePlusNord3_eBay"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticsearch.com/ebay#iPhone15_eBay">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/ebay#iPhone15_eBay"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticsearch.com/ebay#GalaxyS23_eBay">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/ebay#GalaxyS23_eBay"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticsearch.com/ebay#GalaxyBuds2_eBay">
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/ebay#GalaxyBuds2_eBay"/>

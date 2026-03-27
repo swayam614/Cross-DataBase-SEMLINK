@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticsearch.com/samsung#"
+     xml:base="http://www.semanticsearch.com/samsung"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="http://www.semanticsearch.com/schema#"
+     xmlns:samsung="http://www.semanticsearch.com/samsung#">
+
+<owl:Ontology rdf:about="http://www.semanticsearch.com/samsung">
+    <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
+</owl:Ontology>
+
+<!-- Source -->
+<owl:NamedIndividual rdf:about="#SamsungStore">
+    <rdf:type rdf:resource="schema:Source"/>
+</owl:NamedIndividual>
+
+<!-- Brand -->
+<owl:NamedIndividual rdf:about="#Samsung">
+    <rdf:type rdf:resource="schema:Brand"/>
+</owl:NamedIndividual>
+
+<!-- Categories -->
+<owl:NamedIndividual rdf:about="#Smartphone">
+    <rdf:type rdf:resource="schema:Category"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Laptop">
+    <rdf:type rdf:resource="schema:Category"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Headphones">
+    <rdf:type rdf:resource="schema:Category"/>
+</owl:NamedIndividual>
+
+<!-- PRODUCTS -->
+
+<!-- 1 -->
+<owl:NamedIndividual rdf:about="#GalaxyS23_Samsung">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Samsung"/>
+    <schema:hasCategory rdf:resource="#Smartphone"/>
+    <schema:hasSource rdf:resource="#SamsungStore"/>
+    <schema:price rdf:datatype="xsd:decimal">67999</schema:price>
+    <schema:productLink>https://samsung.com/galaxys23</schema:productLink>
+    <schema:productName>Samsung Galaxy S23</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.5</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 2 -->
+<owl:NamedIndividual rdf:about="#GalaxyS24_Samsung">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Samsung"/>
+    <schema:hasCategory rdf:resource="#Smartphone"/>
+    <schema:hasSource rdf:resource="#SamsungStore"/>
+    <schema:price rdf:datatype="xsd:decimal">79999</schema:price>
+    <schema:productLink>https://samsung.com/galaxys24</schema:productLink>
+    <schema:productName>Samsung Galaxy S24</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.6</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 3 -->
+<owl:NamedIndividual rdf:about="#GalaxyBook3_Samsung">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Samsung"/>
+    <schema:hasCategory rdf:resource="#Laptop"/>
+    <schema:hasSource rdf:resource="#SamsungStore"/>
+    <schema:price rdf:datatype="xsd:decimal">89999</schema:price>
+    <schema:productLink>https://samsung.com/galaxybook3</schema:productLink>
+    <schema:productName>Samsung Galaxy Book 3</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.4</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 4 -->
+<owl:NamedIndividual rdf:about="#GalaxyBuds2Pro_Samsung">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Samsung"/>
+    <schema:hasCategory rdf:resource="#Headphones"/>
+    <schema:hasSource rdf:resource="#SamsungStore"/>
+    <schema:price rdf:datatype="xsd:decimal">15999</schema:price>
+    <schema:productLink>https://samsung.com/galaxybuds2pro</schema:productLink>
+    <schema:productName>Samsung Galaxy Buds 2 Pro</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.5</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 5 -->
+<owl:NamedIndividual rdf:about="#SamsungSSD980_Samsung">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Samsung"/>
+    <schema:hasCategory rdf:resource="#SSD"/>
+    <schema:hasSource rdf:resource="#SamsungStore"/>
+    <schema:price rdf:datatype="xsd:decimal">6999</schema:price>
+    <schema:productLink>https://samsung.com/ssd980</schema:productLink>
+    <schema:productName>Samsung SSD 980 500GB</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.6</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 6 -->
+<owl:NamedIndividual rdf:about="#SamsungSSD990Pro_Samsung">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Samsung"/>
+    <schema:hasCategory rdf:resource="#SSD"/>
+    <schema:hasSource rdf:resource="#SamsungStore"/>
+    <schema:price rdf:datatype="xsd:decimal">12999</schema:price>
+    <schema:productLink>https://samsung.com/ssd990pro</schema:productLink>
+    <schema:productName>Samsung SSD 990 Pro 1TB</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.8</schema:rating>
+</owl:NamedIndividual>
+
+<!-- 7 -->
+<owl:NamedIndividual rdf:about="#SamsungT7Portable_Samsung">
+    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
+    <schema:hasBrand rdf:resource="#Samsung"/>
+    <schema:hasCategory rdf:resource="#SSD"/>
+    <schema:hasSource rdf:resource="#SamsungStore"/>
+    <schema:price rdf:datatype="xsd:decimal">9999</schema:price>
+    <schema:productLink>https://samsung.com/t7ssd</schema:productLink>
+    <schema:productName>Samsung T7 Portable SSD 1TB</schema:productName>
+    <schema:rating rdf:datatype="xsd:decimal">4.7</schema:rating>
+</owl:NamedIndividual>
+
+
+
+</rdf:RDF>

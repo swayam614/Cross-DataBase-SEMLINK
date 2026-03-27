@@ -4,6 +4,9 @@ export interface Product {
   price: number
   rating: number
   productLink: string
+
+  // 🕒 NEW FIELD
+  createdAt: string
 }
 
 export const searchProducts = async (query: string): Promise<Product[]> => {
