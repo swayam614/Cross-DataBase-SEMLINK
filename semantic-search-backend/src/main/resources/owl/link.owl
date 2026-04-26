@@ -1,9 +1,10 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns="http://www.semanticsearch.com/link#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+    xmlns:schema="http://www.semanticsearch.com/schema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
   <owl:Ontology rdf:about="http://www.semanticsearch.com/link">
+<<<<<<< HEAD
     <owl:imports rdf:resource="http://www.semanticsearch.com/shopify"/>
     <owl:imports rdf:resource="http://www.semanticsearch.com/flipkart"/>
     <owl:imports rdf:resource="http://www.semanticsearch.com/amazon"/>
@@ -82,26 +83,116 @@
   <rdf:Description rdf:about="http://www.semanticsearch.com/amazon#Samsung">
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/shopify#Samsung"/>
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/flipkart#Samsung"/>
+=======
+    <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
+  </owl:Ontology>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/apple#Product">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#Product"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticsearch.com/ebay#SonyWH1000XM5_eBay">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/ebay#SonyWH1000XM5_eBay"/>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/apple#Category">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#Category"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticsearch.com/ebay#AirPodsPro_eBay">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/ebay#AirPodsPro_eBay"/>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/apple#Source">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#Source"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticsearch.com/ebay#MacBookAirM2_eBay">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/ebay#MacBookAirM2_eBay"/>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/samsung#ratingValue">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticsearch.com/schema#ratingValue"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticsearch.com/ebay#DellXPS13_eBay">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/ebay#DellXPS13_eBay"/>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/samsung#Price">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#Price"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/samsung#hasPrice">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#hasPrice"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticsearch.com/schema#hasPrice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/samsung#hasSource">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#hasSource"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticsearch.com/schema#hasSource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/apple#hasCategory">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#hasCategory"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticsearch.com/schema#hasCategory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/samsung#priceValue">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticsearch.com/schema#priceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/apple#hasRating">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#hasRating"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticsearch.com/schema#hasRating"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/samsung#Category">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/apple#Brand">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/samsung#Source">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#Source"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/apple#hasPrice">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#hasPrice"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticsearch.com/schema#hasPrice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/samsung#hasRating">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#hasRating"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticsearch.com/schema#hasRating"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/samsung#hasBrand">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#hasBrand"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticsearch.com/schema#hasBrand"/>
+>>>>>>> 3683453 (Add manual mapping and remove the bug of duplication by making price and rating as class and assumed that this two data properties are changing so add in that time stamp and make it temporal)
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/samsung#hasCategory">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#hasCategory"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticsearch.com/schema#hasCategory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/samsung#Brand">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/apple#name">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticsearch.com/schema#productName"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/samsung#link">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticsearch.com/schema#productLink"/>
+  </rdf:Description>
+<<<<<<< HEAD
   <rdf:Description rdf:about="http://www.semanticsearch.com/ebay#OnePlusNord3_eBay">
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/ebay#OnePlusNord3_eBay"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticsearch.com/ebay#GalaxyBuds2_eBay">
     <owl:sameAs rdf:resource="http://www.semanticsearch.com/ebay#GalaxyBuds2_eBay"/>
+=======
+  <rdf:Description rdf:about="http://www.semanticsearch.com/apple#ratingValue">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticsearch.com/schema#ratingValue"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticsearch.com/ebay#HPVictus_eBay">
-    <owl:sameAs rdf:resource="http://www.semanticsearch.com/ebay#HPVictus_eBay"/>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/apple#hasBrand">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#hasBrand"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticsearch.com/schema#hasBrand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/apple#Rating">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#Rating"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/apple#hasSource">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#hasSource"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticsearch.com/schema#hasSource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/samsung#name">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticsearch.com/schema#productName"/>
+>>>>>>> 3683453 (Add manual mapping and remove the bug of duplication by making price and rating as class and assumed that this two data properties are changing so add in that time stamp and make it temporal)
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/apple#priceValue">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticsearch.com/schema#priceValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/apple#link">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticsearch.com/schema#productLink"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/apple#Price">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#Price"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/samsung#Rating">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#Rating"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticsearch.com/samsung#Product">
+    <owl:equivalentClass rdf:resource="http://www.semanticsearch.com/schema#Product"/>
   </rdf:Description>
 </rdf:RDF>

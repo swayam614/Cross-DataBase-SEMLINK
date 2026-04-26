@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticsearch.com/samsung#"
      xml:base="http://www.semanticsearch.com/samsung"
@@ -124,3 +125,70 @@
 
 
 </rdf:RDF>
+=======
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:samsung="http://www.semanticsearch.com/samsung#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.0="http://www.semanticsearch.com/schema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://www.semanticsearch.com/samsung"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/samsung#Category"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/samsung#Source"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/samsung#Price"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/samsung#Rating"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/samsung#Product"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/samsung#Brand"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/samsung#hasRating"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/samsung#hasPrice"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/samsung#hasSource"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/samsung#hasBrand"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/samsung#hasCategory"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/samsung#name"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/samsung#ratingValue"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/samsung#link"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/samsung#priceValue"/>
+  <samsung:Product rdf:about="http://www.semanticsearch.com/samsung#S26Ultra_SamsungStore">
+    <samsung:hasBrand>
+      <samsung:Brand rdf:about="http://www.semanticsearch.com/samsung#Samsung"/>
+    </samsung:hasBrand>
+    <samsung:hasPrice>
+      <samsung:Price rdf:about="http://www.semanticsearch.com/samsung#S26Ultra_price">
+        <samsung:priceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >119999</samsung:priceValue>
+      </samsung:Price>
+    </samsung:hasPrice>
+    <samsung:hasRating>
+      <samsung:Rating rdf:about="http://www.semanticsearch.com/samsung#S26Ultra_rating">
+        <samsung:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >4.5</samsung:ratingValue>
+      </samsung:Rating>
+    </samsung:hasRating>
+    <samsung:hasCategory>
+      <samsung:Category rdf:about="http://www.semanticsearch.com/samsung#Smartphone"/>
+    </samsung:hasCategory>
+    <samsung:name>Samsung Galaxy S26 Ultra</samsung:name>
+    <samsung:link>https://samsung.com/s26ultra</samsung:link>
+    <j.0:hasPrice>
+      <j.0:Price rdf:about="http://www.semanticsearch.com/samsung#S26Ultra_price_v1776777486292">
+        <j.0:priceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >119999</j.0:priceValue>
+        <j.0:priceTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2026-04-21T13:18:06.292497Z</j.0:priceTimestamp>
+      </j.0:Price>
+    </j.0:hasPrice>
+    <j.0:hasRating>
+      <j.0:Rating rdf:about="http://www.semanticsearch.com/samsung#S26Ultra_rating_v1776777486291">
+        <j.0:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >4.5</j.0:ratingValue>
+        <j.0:ratingTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2026-04-21T13:18:06.292309Z</j.0:ratingTimestamp>
+      </j.0:Rating>
+    </j.0:hasRating>
+    <samsung:hasSource>
+      <samsung:Source rdf:about="http://www.semanticsearch.com/samsung#SamsungStore"/>
+    </samsung:hasSource>
+  </samsung:Product>
+</rdf:RDF>
+>>>>>>> 3683453 (Add manual mapping and remove the bug of duplication by making price and rating as class and assumed that this two data properties are changing so add in that time stamp and make it temporal)

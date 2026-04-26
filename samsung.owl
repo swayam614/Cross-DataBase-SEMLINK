@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<<<<<<< HEAD
 <rdf:RDF xmlns="http://www.semanticsearch.com/samsung#"
      xml:base="http://www.semanticsearch.com/samsung"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -122,5 +123,66 @@
 </owl:NamedIndividual>
 
 
+=======
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:samsung="http://www.semanticsearch.com/samsung#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+  <!-- Ontology -->
+  <owl:Ontology rdf:about="http://www.semanticsearch.com/samsung"/>
+
+  <!-- Classes -->
+  <owl:Class rdf:about="http://www.semanticsearch.com/samsung#Product"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/samsung#Price"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/samsung#Rating"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/samsung#Brand"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/samsung#Source"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/samsung#Category"/>
+
+  <!-- Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/samsung#name"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/samsung#link"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/samsung#priceValue"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/samsung#ratingValue"/>
+
+  <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/samsung#hasPrice"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/samsung#hasRating"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/samsung#hasBrand"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/samsung#hasSource"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/samsung#hasCategory"/>
+
+  <!-- Product -->
+  <samsung:Product rdf:about="http://www.semanticsearch.com/samsung#S26Ultra_SamsungStore">
+
+    <samsung:name>Samsung Galaxy S26 Ultra</samsung:name>
+    <samsung:link>https://samsung.com/s26ultra</samsung:link>
+
+    <samsung:hasBrand rdf:resource="http://www.semanticsearch.com/samsung#Samsung"/>
+    <samsung:hasSource rdf:resource="http://www.semanticsearch.com/samsung#SamsungStore"/>
+    <samsung:hasCategory rdf:resource="http://www.semanticsearch.com/samsung#Smartphone"/>
+
+    <samsung:hasPrice rdf:resource="http://www.semanticsearch.com/samsung#S26Ultra_price"/>
+    <samsung:hasRating rdf:resource="http://www.semanticsearch.com/samsung#S26Ultra_rating"/>
+
+  </samsung:Product>
+
+  <!-- Price -->
+  <samsung:Price rdf:about="http://www.semanticsearch.com/samsung#S26Ultra_price">
+    <samsung:priceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">119999</samsung:priceValue>
+  </samsung:Price>
+
+  <!-- Rating -->
+  <samsung:Rating rdf:about="http://www.semanticsearch.com/samsung#S26Ultra_rating">
+    <samsung:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</samsung:ratingValue>
+  </samsung:Rating>
+
+  <!-- Entities -->
+  <samsung:Brand rdf:about="http://www.semanticsearch.com/samsung#Samsung"/>
+  <samsung:Source rdf:about="http://www.semanticsearch.com/samsung#SamsungStore"/>
+  <samsung:Category rdf:about="http://www.semanticsearch.com/samsung#Smartphone"/>
+>>>>>>> 3683453 (Add manual mapping and remove the bug of duplication by making price and rating as class and assumed that this two data properties are changing so add in that time stamp and make it temporal)
 
 </rdf:RDF>

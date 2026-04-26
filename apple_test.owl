@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:apple="http://www.semanticsearch.com/apple#"
+    xmlns:schema="http://www.semanticsearch.com/schema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+  <owl:Ontology rdf:about="http://www.semanticsearch.com/apple">
+    <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
+  </owl:Ontology>
+
+  <!-- UPDATED PRODUCT -->
+  <schema:Product rdf:about="http://www.semanticsearch.com/apple#iPhone15_AppleStore">
+
+    <!-- 🔥 NEW TIMESTAMP (LATEST) -->
+    <schema:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
+        2026-04-09T17:30:00
+    </schema:timestamp>
+
+    <!-- 🔥 UPDATED PRICE -->
+    <schema:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">
+        99999
+    </schema:price>
+
+    <schema:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">
+        3.7
+    </schema:rating>
+
+    <schema:productLink>https://apple.com/iphone15</schema:productLink>
+
+    <schema:productName>Apple iPhone 15</schema:productName>
+
+    <schema:hasSource>
+      <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/apple#AppleStore">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Source"/>
+      </owl:NamedIndividual>
+    </schema:hasSource>
+
+    <schema:hasBrand>
+      <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/apple#Apple">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
+      </owl:NamedIndividual>
+    </schema:hasBrand>
+
+    <schema:hasCategory>
+      <owl:NamedIndividual rdf:about="http://www.semanticsearch.com/apple#Smartphone">
+        <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Category"/>
+      </owl:NamedIndividual>
+    </schema:hasCategory>
+
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+
+  </schema:Product>
+
+</rdf:RDF>

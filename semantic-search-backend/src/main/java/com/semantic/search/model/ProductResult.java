@@ -31,8 +31,8 @@ public class ProductResult {
 
     private String productName;
     private String source;
-    private double price;
-    private double rating;
+    private Double price;   // ✅ changed
+    private Double rating;  // ✅ changed
     private String productLink;
 
     // 🕒 NEW FIELD
@@ -44,11 +44,11 @@ public class ProductResult {
     public String getSource() { return source; }
     public void setSource(String source) { this.source = source; }
 
-    public double getPrice() { return price; }
-    public void setPrice(double price) { this.price = price; }
+    public Double getPrice() { return price; }
+    public void setPrice(Double price) { this.price = price; }
 
-    public double getRating() { return rating; }
-    public void setRating(double rating) { this.rating = rating; }
+    public Double getRating() { return rating; }
+    public void setRating(Double rating) { this.rating = rating; }
 
     public String getProductLink() { return productLink; }
     public void setProductLink(String productLink) { this.productLink = productLink; }

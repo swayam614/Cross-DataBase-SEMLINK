@@ -1,56 +1,137 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticsearch.com/apple#"
-     xml:base="http://www.semanticsearch.com/apple"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:schema="http://www.semanticsearch.com/schema#"
-     xmlns:apple="http://www.semanticsearch.com/apple#">
-
-<owl:Ontology rdf:about="http://www.semanticsearch.com/apple">
-    
-    <!-- Import Schema -->
-    <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
-
-</owl:Ontology>
-
-
-<!-- Source -->
-<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/apple#AppleStore">
-    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Source"/>
-</owl:NamedIndividual>
-
-
-<!-- Brand -->
-<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/apple#Apple">
-    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Brand"/>
-</owl:NamedIndividual>
-
-
-<!-- Category -->
-<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/apple#Smartphone">
-    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Category"/>
-</owl:NamedIndividual>
-
-
-<!-- Product -->
-<owl:NamedIndividual rdf:about="http://www.semanticsearch.com/apple#iPhone15_AppleStore">
-    <rdf:type rdf:resource="http://www.semanticsearch.com/schema#Product"/>
-
-    <schema:hasBrand rdf:resource="http://www.semanticsearch.com/apple#Apple"/>
-    <schema:hasCategory rdf:resource="http://www.semanticsearch.com/apple#Smartphone"/>
-    <schema:hasSource rdf:resource="http://www.semanticsearch.com/apple#AppleStore"/>
-
-    <!-- Slightly different price -->
-    <schema:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80999</schema:price>
-
-    <schema:productLink>https://apple.com/iphone15</schema:productLink>
-
-    <!-- SAME NAME (IMPORTANT FOR LINKING) -->
-    <schema:productName>Apple iPhone 15</schema:productName>
-
-    <schema:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</schema:rating>
-</owl:NamedIndividual>
-
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:apple="http://www.semanticsearch.com/apple#"
+    xmlns:j.0="http://www.semanticsearch.com/schema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://www.semanticsearch.com/apple"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/apple#Brand"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/apple#Product"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/apple#Category"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/apple#Source"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/apple#Price"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/apple#Rating"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/apple#hasPrice"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/apple#hasCategory"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/apple#hasBrand"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/apple#hasRating"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/apple#hasSource"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/apple#name"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/apple#priceValue"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/apple#link"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/apple#ratingValue"/>
+  <apple:Product rdf:about="http://www.semanticsearch.com/apple#iPhone15_AppleStore">
+    <j.0:hasPrice>
+      <j.0:Price rdf:about="http://www.semanticsearch.com/apple#iPhone15_price_v1776694452231">
+        <j.0:priceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >80999</j.0:priceValue>
+        <j.0:priceTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2026-04-20T14:14:12.231156Z</j.0:priceTimestamp>
+      </j.0:Price>
+    </j.0:hasPrice>
+    <apple:name>Apple iPhone 15</apple:name>
+    <j.0:hasRating>
+      <j.0:Rating rdf:about="http://www.semanticsearch.com/apple#iPhone15_rating_v1776694665193">
+        <j.0:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >3.7</j.0:ratingValue>
+        <j.0:ratingTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2026-04-20T14:17:45.193320Z</j.0:ratingTimestamp>
+      </j.0:Rating>
+    </j.0:hasRating>
+    <apple:hasCategory>
+      <apple:Category rdf:about="http://www.semanticsearch.com/apple#Smartphone"/>
+    </apple:hasCategory>
+    <apple:link>https://apple.com/iphone15</apple:link>
+    <apple:hasRating>
+      <apple:Rating rdf:about="http://www.semanticsearch.com/apple#iPhone15_rating">
+        <apple:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >3.7</apple:ratingValue>
+        <apple:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >4.7</apple:ratingValue>
+      </apple:Rating>
+    </apple:hasRating>
+    <apple:hasBrand>
+      <apple:Brand rdf:about="http://www.semanticsearch.com/apple#Apple"/>
+    </apple:hasBrand>
+    <apple:hasPrice>
+      <apple:Price rdf:about="http://www.semanticsearch.com/apple#iPhone15_price">
+        <apple:priceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >70999</apple:priceValue>
+        <apple:priceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >80999</apple:priceValue>
+        <apple:priceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >90999</apple:priceValue>
+        <apple:priceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >100999</apple:priceValue>
+      </apple:Price>
+    </apple:hasPrice>
+    <apple:hasSource>
+      <apple:Source rdf:about="http://www.semanticsearch.com/apple#AppleStore"/>
+    </apple:hasSource>
+    <j.0:hasRating>
+      <j.0:Rating rdf:about="http://www.semanticsearch.com/apple#iPhone15_rating_v1776773085830">
+        <j.0:ratingTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2026-04-21T12:04:45.830227Z</j.0:ratingTimestamp>
+        <j.0:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >3.7</j.0:ratingValue>
+      </j.0:Rating>
+    </j.0:hasRating>
+    <j.0:hasRating>
+      <j.0:Rating rdf:about="http://www.semanticsearch.com/apple#iPhone15_rating_v1776694564578">
+        <j.0:ratingTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2026-04-20T14:16:04.578821Z</j.0:ratingTimestamp>
+        <j.0:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >4.7</j.0:ratingValue>
+      </j.0:Rating>
+    </j.0:hasRating>
+    <j.0:hasRating>
+      <j.0:Rating rdf:about="http://www.semanticsearch.com/apple#iPhone15_rating_v1776777843706">
+        <j.0:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >3.7</j.0:ratingValue>
+        <j.0:ratingTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2026-04-21T13:24:03.707Z</j.0:ratingTimestamp>
+      </j.0:Rating>
+    </j.0:hasRating>
+    <j.0:hasPrice>
+      <j.0:Price rdf:about="http://www.semanticsearch.com/apple#iPhone15_price_v1776773085830">
+        <j.0:priceTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2026-04-21T12:04:45.830393Z</j.0:priceTimestamp>
+        <j.0:priceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >100999</j.0:priceValue>
+      </j.0:Price>
+    </j.0:hasPrice>
+    <j.0:hasPrice>
+      <j.0:Price rdf:about="http://www.semanticsearch.com/apple#iPhone15_price_v1776694564578">
+        <j.0:priceTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2026-04-20T14:16:04.578919Z</j.0:priceTimestamp>
+        <j.0:priceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >90999</j.0:priceValue>
+      </j.0:Price>
+    </j.0:hasPrice>
+    <j.0:hasPrice>
+      <j.0:Price rdf:about="http://www.semanticsearch.com/apple#iPhone15_price_v1776694665193">
+        <j.0:priceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >90999</j.0:priceValue>
+        <j.0:priceTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2026-04-20T14:17:45.193403Z</j.0:priceTimestamp>
+      </j.0:Price>
+    </j.0:hasPrice>
+    <j.0:hasRating>
+      <j.0:Rating rdf:about="http://www.semanticsearch.com/apple#iPhone15_rating_v1776694452230">
+        <j.0:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >4.7</j.0:ratingValue>
+        <j.0:ratingTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2026-04-20T14:14:12.230902Z</j.0:ratingTimestamp>
+      </j.0:Rating>
+    </j.0:hasRating>
+    <j.0:hasPrice>
+      <j.0:Price rdf:about="http://www.semanticsearch.com/apple#iPhone15_price_v1776777843707">
+        <j.0:priceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >70999</j.0:priceValue>
+        <j.0:priceTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2026-04-21T13:24:03.707109Z</j.0:priceTimestamp>
+      </j.0:Price>
+    </j.0:hasPrice>
+  </apple:Product>
 </rdf:RDF>

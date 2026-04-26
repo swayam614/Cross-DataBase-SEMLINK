@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns="http://www.semanticsearch.com/sonytest#"
+    xml:base="http://www.semanticsearch.com/sonytest"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+    <!-- Ontology -->
+    <owl:Ontology rdf:about="http://www.semanticsearch.com/sonytest"/>
+
+    <!-- ========================= -->
+    <!-- CLASSES -->
+    <!-- ========================= -->
+
+    <owl:Class rdf:about="#Product"/>
+    <owl:Class rdf:about="#Category"/>
+    <owl:Class rdf:about="#Brand"/>
+    <owl:Class rdf:about="#Source"/>
+
+    <!-- ========================= -->
+    <!-- PROPERTIES -->
+    <!-- ========================= -->
+
+    <owl:DatatypeProperty rdf:about="#productName"/>
+    <owl:DatatypeProperty rdf:about="#price"/>
+    <owl:DatatypeProperty rdf:about="#rating"/>
+    <owl:DatatypeProperty rdf:about="#productLink"/>
+
+    <owl:ObjectProperty rdf:about="#hasCategory"/>
+    <owl:ObjectProperty rdf:about="#hasSource"/>
+    <owl:ObjectProperty rdf:about="#hasBrand"/>
+
+    <!-- ========================= -->
+    <!-- INDIVIDUALS -->
+    <!-- ========================= -->
+
+    <!-- Brand -->
+    <owl:NamedIndividual rdf:about="#SonyTest">
+        <rdf:type rdf:resource="#Brand"/>
+    </owl:NamedIndividual>
+
+    <!-- Source -->
+    <owl:NamedIndividual rdf:about="#SonyTest">
+        <rdf:type rdf:resource="#Source"/>
+    </owl:NamedIndividual>
+
+    <!-- Categories -->
+    <owl:NamedIndividual rdf:about="#Headphones">
+        <rdf:type rdf:resource="#Category"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#Television">
+        <rdf:type rdf:resource="#Category"/>
+    </owl:NamedIndividual>
+
+    <!-- ========================= -->
+    <!-- PRODUCTS -->
+    <!-- ========================= -->
+
+    <owl:NamedIndividual rdf:about="#Sony_XB910N">
+        <rdf:type rdf:resource="#Product"/>
+
+        <hasCategory rdf:resource="#Headphones"/>
+        <hasSource rdf:resource="#SonyTest"/>
+        <hasBrand rdf:resource="#SonyTest"/>
+
+        <productName rdf:datatype="xsd:string">Sony XB910N Extra Bass</productName>
+        <price rdf:datatype="xsd:float">18999</price>
+        <rating rdf:datatype="xsd:float">4.5</rating>
+        <productLink rdf:datatype="xsd:string">https://sony.com/xb910n</productLink>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#Sony_Bravia_65">
+        <rdf:type rdf:resource="#Product"/>
+
+        <hasCategory rdf:resource="#Television"/>
+        <hasSource rdf:resource="#SonyTest"/>
+        <hasBrand rdf:resource="#SonyTest"/>
+
+        <productName rdf:datatype="xsd:string">Sony Bravia 65 Inch 4K</productName>
+        <price rdf:datatype="xsd:float">99999</price>
+        <rating rdf:datatype="xsd:float">4.4</rating>
+        <productLink rdf:datatype="xsd:string">https://sony.com/bravia65</productLink>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#Sony_LinkBuds_S">
+        <rdf:type rdf:resource="#Product"/>
+
+        <hasCategory rdf:resource="#Headphones"/>
+        <hasSource rdf:resource="#SonyTest"/>
+        <hasBrand rdf:resource="#SonyTest"/>
+
+        <productName rdf:datatype="xsd:string">Sony LinkBuds S</productName>
+        <price rdf:datatype="xsd:float">14999</price>
+        <rating rdf:datatype="xsd:float">4.6</rating>
+        <productLink rdf:datatype="xsd:string">https://sony.com/linkbuds</productLink>
+    </owl:NamedIndividual>
+
+</rdf:RDF>

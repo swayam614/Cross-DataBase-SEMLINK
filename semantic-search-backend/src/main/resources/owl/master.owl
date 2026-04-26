@@ -1,7 +1,10 @@
+<?xml version="1.0"?>
 <rdf:RDF
+    xml:base="http://www.semanticsearch.com/master"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:samsung="http://www.semanticsearch.com/samsung#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
+<<<<<<< HEAD
     xmlns:schema="http://www.semanticsearch.com/schema#"
     xmlns:ebay="http://www.semanticsearch.com/ebay#"
     xmlns:test="http://www.semanticsearch.com/test#"
@@ -341,3 +344,19 @@
     <rdf:type rdf:resource="schema:Product"/>
   </schema:Product>
 </rdf:RDF>
+=======
+    xmlns:schema="http://www.semanticsearch.com/schema#">
+
+  <!-- Master Ontology -->
+  <owl:Ontology rdf:about="http://www.semanticsearch.com/master">
+
+    <!-- Core schema -->
+    <owl:imports rdf:resource="http://www.semanticsearch.com/schema"/>
+
+    <!-- Linking ontology -->
+    <owl:imports rdf:resource="http://www.semanticsearch.com/link"/>
+
+  </owl:Ontology>
+
+</rdf:RDF>
+>>>>>>> 3683453 (Add manual mapping and remove the bug of duplication by making price and rating as class and assumed that this two data properties are changing so add in that time stamp and make it temporal)

@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:vivo="http://www.semanticsearch.com/vivo#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+  <!-- Ontology -->
+  <owl:Ontology rdf:about="http://www.semanticsearch.com/vivo"/>
+
+  <!-- Classes -->
+  <owl:Class rdf:about="http://www.semanticsearch.com/vivo#Product"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/vivo#Price"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/vivo#Rating"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/vivo#Brand"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/vivo#Source"/>
+  <owl:Class rdf:about="http://www.semanticsearch.com/vivo#Category"/>
+
+  <!-- Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/vivo#name"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/vivo#link"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/vivo#priceValue"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticsearch.com/vivo#ratingValue"/>
+
+  <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/vivo#hasPrice"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/vivo#hasRating"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/vivo#hasBrand"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/vivo#hasSource"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticsearch.com/vivo#hasCategory"/>
+
+  <!-- Product -->
+  <vivo:Product rdf:about="http://www.semanticsearch.com/vivo#VivoX200Pro_VivoStore">
+
+    <vivo:name>Vivo X200 Pro</vivo:name>
+    <vivo:link>https://vivo.com/x200pro</vivo:link>
+
+    <vivo:hasBrand rdf:resource="http://www.semanticsearch.com/vivo#Vivo"/>
+    <vivo:hasSource rdf:resource="http://www.semanticsearch.com/vivo#VivoStore"/>
+    <vivo:hasCategory rdf:resource="http://www.semanticsearch.com/vivo#Smartphone"/>
+
+    <vivo:hasPrice rdf:resource="http://www.semanticsearch.com/vivo#X200Pro_price"/>
+    <vivo:hasRating rdf:resource="http://www.semanticsearch.com/vivo#X200Pro_rating"/>
+
+  </vivo:Product>
+
+  <!-- Price -->
+  <vivo:Price rdf:about="http://www.semanticsearch.com/vivo#X200Pro_price">
+    <vivo:priceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">89999</vivo:priceValue>
+  </vivo:Price>
+
+  <!-- Rating -->
+  <vivo:Rating rdf:about="http://www.semanticsearch.com/vivo#X200Pro_rating">
+    <vivo:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</vivo:ratingValue>
+  </vivo:Rating>
+
+  <!-- Entities -->
+  <vivo:Brand rdf:about="http://www.semanticsearch.com/vivo#Vivo"/>
+  <vivo:Source rdf:about="http://www.semanticsearch.com/vivo#VivoStore"/>
+  <vivo:Category rdf:about="http://www.semanticsearch.com/vivo#Smartphone"/>
+
+</rdf:RDF>
